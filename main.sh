@@ -2,32 +2,21 @@
 #set -x
 cat Options.txt
 read input
-while [ "$input" != "exit" ]
+while [ $input != "exit" ]
 do
-	if [ "$input" -eq 1 ]; 
-		then  "HeartBit of Edison!"
-	fi
+	case $input in
+		1) echo "HeartBit of Edison!";;
 
-	else if [ "$input" -eq 2 ]; 
-		then  cat /dev/ttyUSB0
-	fi
+		2) cat /dev/ttyUSB0;;
 
-	else if [ "$input" -eq 3 ]; 
-		then battery-voltage
-	fi	
+		3) battery-voltage ;;
 
-	else if [ "$input" -eq 4 ]; 
-		then grep "MemFree\|MemTotal" /proc/meminfo
-	fi
+		4) grep "MemFree\|MemTotal" /proc/meminfo ;;
 	
-	else if [ "$input" -eq 5 ]; 
-		then  
-	fi
-	
-	else if [ "$input" -eq 6 ]; 
-		then python led.py
-	fi
-
+		5) echo "5" ;;
+		
+		6 ) python led.py ;;
+	esac
 	read input
 
 done
