@@ -15,7 +15,7 @@ do
 	
 		5) echo "5" ;;
 		
-		6 ) python led.py ;;
+		6 ) python /home/root/github/nanocubsat/scripts led.py ;;
 	esac
 	read input
 
