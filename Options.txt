@@ -1,0 +1,13 @@
+
+###############################
+Enter number between 1-6 to get INFO followed by [ENTER]
+
+[1] : HeartBit
+[2] : Position
+[3] : Battery 
+[4] : Memory (CPU)
+[5] : State of Health (SoH)
+[6] : Blink LED
+
+###############################
+
