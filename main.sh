@@ -15,9 +15,9 @@ do
 	
 		5) echo "5" ;;
 		
-		6 )
-		 led = $(sudo find / -name "led.py")	
-		 python $led ;;
+		6)
+		 led="$(find / -name 'led.py')"	
+		 python "$led" ;;
 	esac
 	read input
 
