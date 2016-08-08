@@ -18,6 +18,15 @@ do
 		6)
 		 led="$(find / -name 'led.py')"	
 		 python "$led" ;;
+		
+		7)
+		/home/root/github/nanocubsat/scripts/./webcam.sh
+		;;
+
+		8)
+		/home/root/github/nanocubsat/scripts/./webVideo.sh
+		;;
+
 	esac
 	read input
 
