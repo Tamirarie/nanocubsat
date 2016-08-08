@@ -8,6 +8,8 @@ Enter number between 1-6 to get INFO followed by [ENTER]
 [4] : Memory (CPU)
 [5] : State of Health (SoH)
 [6] : Blink LED
+[7] : Take Photo
+[8] : Create LIVE Video
 
 ###############################
 

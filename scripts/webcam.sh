@@ -2,6 +2,12 @@
 
 DATE=$(date +"%Y-%m-%d_%H%M")
 
-fswebcam -r 1280x720 --no-banner webcam/$DATE.jpg
+if [ ! -d "$webcam" ]; 
+then mkdir -v /root/webcam 
+fi
+  
+fswebcam -r 1280x720 --no-banner /root/webcam/$DATE.jpg
 
-echo -e -n "pictured"  > /dev/ttyUSB0  
+echo photo captured to webcam/$DATE
+
+eog /root/webcam/$DATE.jpg
