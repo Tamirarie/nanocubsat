@@ -25,6 +25,7 @@ do
 
 		8)
 		/home/root/github/nanocubsat/scripts/./webVideo.sh
+		
 		;;
 
 	esac
