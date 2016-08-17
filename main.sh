@@ -9,7 +9,7 @@ do
 
 		2) cat /dev/ttyUSB0;;
 
-		3) battery-voltage ;;
+		3) ./scripts/voltage ;;
 
 		4) grep "MemFree\|MemTotal" /proc/meminfo ;;
 	
